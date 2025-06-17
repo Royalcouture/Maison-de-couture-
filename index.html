@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maison de Couture Royale</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #2c2c2c;
+      background-color: #fdfdfd;
+    }
+    header {
+      background-color: #fff0f5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .logo {
+      height: 60px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #c71585;
+      font-weight: bold;
+    }
+    .banner {
+      background-color: #c71585;
+      padding: 6rem 2rem;
+      color: white;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+    }
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .gallery img {
+      width: 30%;
+      border-radius: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 0.8rem;
+      background-color: #c71585;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #fff0f5;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/150x60?text=Logo" alt="Logo Maison de Couture" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="accueil" class="banner">
+    <h1>Maison de Couture Royale</h1>
+    <p>Le style est une élégance silencieuse.</p>
+  </section>
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>Notre maison de couture incarne l’alliance parfaite entre l’audace créative et la tradition artisanale...</p>
+  </section>
+
+  <section id="collections">
+    <h2>Nos Collections</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x400?text=Collection+1" alt="Collection 1" />
+      <img src="https://via.placeholder.com/300x400?text=Collection+2" alt="Collection 2" />
+      <img src="https://via.placeholder.com/300x400?text=Collection+3" alt="Collection 3" />
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Nos Services</h2>
+    <ul>
+      <li>Confection sur-mesure</li>
+      <li>Conseil en image</li>
+      <li>Retouches personnalisées</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email : contact@maisoncouture.com</p>
+    <p>Téléphone : +243 000 000 000</p>
+    <form>
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre email" required />
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Maison de Couture Royale. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Merci pour votre message. Nous vous répondrons bientôt.");
+    });
+  </script>
+</body>
+</html>
